@@ -1,0 +1,13 @@
+{
+    "name": "weather-source",
+    "config": {
+        "locations": "Paris/paris,London/london,New York/40.77:-73.98",
+        "url": "https://twcservice.eu-gb.mybluemix.net",
+        "poll.interval.minutes": "15",
+        "connector.class": "com.ibm.eventstreams.connect.weathersource.WeatherSourceConnector",
+        "topic": "weather",
+        "username": "<WEATHER_SERVICE_USERNAME>",
+        "password": "<WEATHER_SERVICE_PASSWORD>",
+        "units": "m"
+    }
+}
